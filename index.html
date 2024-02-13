@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <linkhref="https: //fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+        <title>Valentine Day Card</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="book">
+            <div class="cover">
+                <div class="notes">Happy</div>
+                <div class="heart"></div>
+                <div class="smile"></div>
+                <div class="eyes"></div>
+            </div>
+        </div>
+        &nbsp;<h3>Hey Dear,<br> &nbsp;I know I am a very bad bf to express my love to you <br> &nbsp;but believe me I
+            love you so much Please Don't Leave me .</h3>
+    </div>
+    <button onclick="sharePage()">Share</button>
+
+    <script>
+        async function sharePage() {
+            await navigator.share({
+                title: document.title,
+                url: window.location.href
+            })
+        }
+    </script>
+</body>
+
+</html>
